@@ -4,8 +4,8 @@
   "description": "//* Project Planning\r 1. Server build with Express js\r 2. Setup Basic Server",
   "main": "src/server.ts",
   "scripts": {
-    "dev":"tsx watch src/server.ts",
-    "start":"tsx dist/app.js",
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -20,6 +20,7 @@
     "typescript": "^7.0.2"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/node": "^26.6.8",
     "tsx": "^4.23.15"

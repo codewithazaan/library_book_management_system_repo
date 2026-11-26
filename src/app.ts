@@ -1,12 +1,13 @@
-import express ,  {type Request, type Response}  from 'express';
+import express ,  {urlencoded, type Request, type Response}  from 'express';
+import cors from "cors";
 
   
 
 const app = express(); // app setup  -> 1st step
-//middleware Create CORS -> 2nd step
-//middle Ware For Request and Response By convert json
-//middle ware for uploading file, image for allowing In Our Website
-//
+app.use(cors({origin: "http://localhost:4000" }))//middleware Create CORS -> 2nd step
+app.use(express.json())//middle Ware For Request and Response By convert json
+app.use(express.urlencoded({ extended: true }))//middle ware for uploading file, image for allowing In Our Website -> extended : true
+
 
 
 
