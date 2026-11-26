@@ -1,9 +1,16 @@
+import { Pool } from "pg";
 import app from "./app";
-const PORT = process.env.PORT ||4000;
-const startServer = () =>{
+import config from "./config";
+import { pool } from "./db/db";
+const startServer = async() =>{
+
 try {
-    app.listen(PORT, ()=>{
-    console.log(`Server Is Listening on the port ${PORT}`)
+
+    const time = await pool.query("SELECT NOW()")
+    console.log("Database Connected Successfully:",time.rows[0].now)
+
+    app.listen(config.port, ()=>{
+    console.log(`Server Is Listening on the port ${config.port}`)
 })
 } catch (error) {
     console.error("Failed To Fetch Server!!", error)

@@ -4,7 +4,8 @@
 
 //! Build Library Management System Build
 1. - Book Domain
-2. - authentication system -> auth
+2. - authentication system -> auth  
+-- id, name, email, password, role
 3. - Borrow
 
 
