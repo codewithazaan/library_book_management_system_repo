@@ -1,0 +1,27 @@
+{
+  "name": "library_book_management_system",
+  "version": "1.0.0",
+  "description": "//* Project Planning\r 1. Server build with Express js\r 2. Setup Basic Server",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev":"tsx watch src/server.ts",
+    "start":"tsx dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "pg": "^8.23.1",
+    "typescript": "^7.0.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.8",
+    "tsx": "^4.23.15"
+  }
+}
